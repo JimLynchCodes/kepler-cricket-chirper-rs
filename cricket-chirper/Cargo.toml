@@ -1,0 +1,24 @@
+[package]
+name = "pico-buzzer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Standard ARM crates
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+panic-halt = "0.2"
+
+# Hardware abstraction
+embedded-hal = "1.0"
+embedded-io = "0.6"
+
+# The Pico HAL - 'rt' feature provides the linker script automatically
+rp-pico = { version = "0.9", features = ["rt"] }
+
+[profile.release]
+panic = "abort"
+opt-level = 3
+lto = true
+codegen-units = 1
+debug = true
