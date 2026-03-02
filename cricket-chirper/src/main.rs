@@ -1,6 +1,11 @@
 #![no_std]
 #![no_main]
 
+// FORCE the bootloader into the binary
+#[link_section = ".boot2"]
+#[used]
+pub static BOOT2: [u8; 256] = rp2040_boot2::BOOT_LOADER_W25Q080;
+
 use panic_halt as _;
 
 // Use the entry macro from the HAL, not cortex_m_rt

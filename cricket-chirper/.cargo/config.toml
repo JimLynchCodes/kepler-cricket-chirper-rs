@@ -5,4 +5,6 @@ target = "thumbv6m-none-eabi"
 rustflags = [
     "-C", "link-arg=-Tlink.x",
     "-C", "link-arg=--nmagic",
+    # This line is the magic bullet:
+    "-C", "link-arg=-z", "-C", "link-arg=keep-section=.boot2",
 ]
