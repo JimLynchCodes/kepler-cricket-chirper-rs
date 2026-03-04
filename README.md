@@ -70,3 +70,9 @@ Once you've flashed the code:
 
 <br/>
 
+## Error: Unrecognized ABI
+
+This error was giving me a LOT of trouble for a long time, but I eventually solved it by just updating the elf2uf2-rs cli tool:
+```
+cargo install elf2uf2-rs
+```
