@@ -15,7 +15,7 @@ embedded-io = "0.6"
 
 # The Pico HAL - 'rt' feature provides the linker script automatically
 rp-pico = { version = "0.9", features = ["rt"] }
-rp2040-boot2 = "0.3"
+# rp2040-boot2 = "0.3"
 
 [profile.release]
 panic = "abort"
