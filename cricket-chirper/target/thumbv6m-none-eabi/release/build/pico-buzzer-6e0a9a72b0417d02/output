@@ -1,0 +1,2 @@
+cargo:rerun-if-changed=memory.x
+cargo:rerun-if-changed=boot2.x
