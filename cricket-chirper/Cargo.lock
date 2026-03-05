@@ -283,6 +283,7 @@ dependencies = [
  "embedded-io",
  "panic-halt",
  "rp-pico",
+ "rp2040-boot2",
 ]
 
 [[package]]
