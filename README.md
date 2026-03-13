@@ -20,6 +20,12 @@ Pi pico diagram:
 <br/>
 <br/>
 
+# Dev Guide
+
+## Move Into Project Folder
+```
+cd cricket_chirper
+```
 
 # Install target (if needed)
 ```
